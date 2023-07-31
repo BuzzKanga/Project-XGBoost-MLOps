@@ -46,20 +46,6 @@ def prep_data(churn):
     return dtrain, dtest, y_test
     
 
-# def train_model():
-#     model = XGBClassifier(use_label_encoder=False, eval_metric='mlogloss',tree_method="hist",enable_categorical=True)
-#     model.fit(X_train, y_train)
-
-#     return model
-
-# def pred_model():
-#     y_pred = model.predict(X_test)
-
-#     accuracy = accuracy_score(y_test, y_pred)
-#     accuracy
-
-#     return model
-
 @task(log_prints=True)
 def train_xgb_model(dtrain, dtest):
 
