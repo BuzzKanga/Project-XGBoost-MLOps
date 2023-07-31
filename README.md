@@ -30,7 +30,11 @@ I will re-use the data analysis performed by Denis V. Batalov, a Solutions Archi
 
 I will use the binary classification [XGBoost](https://xgboost.readthedocs.io/en/stable/index.html) algorithm to determine whether a customer is likely to churn.
 
+## Architecture
 
+![Architecture image](C:\Users\steve.christolis\OneDrive%20-%20Versent\Documents\Learning%20Projects\MLOps%20Zoomcamp\Homework\Project\Architecture.png)
+
+## Project Deliverables
 
 | Area                                   | Criteria                                                                                                                                                                                                                                        | Reference     |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
