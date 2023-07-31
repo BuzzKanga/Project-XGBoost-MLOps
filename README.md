@@ -32,7 +32,7 @@ I will use the binary classification [XGBoost](https://xgboost.readthedocs.io/en
 
 ## Architecture
 
-![Architecture image](C:\Users\steve.christolis\OneDrive%20-%20Versent\Documents\Learning%20Projects\MLOps%20Zoomcamp\Homework\Project\Architecture.png)
+![Architecture](images/Architecture.png)
 
 ## Project Deliverables
 
