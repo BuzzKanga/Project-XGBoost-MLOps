@@ -4,7 +4,7 @@ Capstone project for MLOps Zoomcamp course.
 
 # Problem Description
 
-Losing customers is costly for any business. Therefore, identifying unhappy customers early on enables a company to offer them incentives to stay. Machine learning (ML) can be used for the automated identification of unhappy customers. This is also known as customer churn prediction.
+Losing customers is costly for any business. Therefore, identifying unhappy customers early on enables a company to offer them incentives to stay. Machine learning (ML) can be used for the automated identification of unhappy customers. This is also known as customer churn prediction. 
 
 ![Customer-Churn](images/Customer-Churn.png)
 
