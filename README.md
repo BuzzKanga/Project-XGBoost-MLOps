@@ -1,6 +1,6 @@
 # Project-XGBoost-MLOps
 
-Project for MLOps Zoomcamp course
+Capstone project for MLOps Zoomcamp course.
 
 # Problem Description
 
