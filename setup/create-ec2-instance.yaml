@@ -1,0 +1,45 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create an EC2 instance with Ubuntu t2.micro in ap-southeast-2 region
+
+Parameters:
+  KeyName:
+    Type: String
+    Default: mlops-zoomcamp-key
+    Description: Name of an existing EC2 key pair to enable SSH access to the instance
+
+Resources:
+  EC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-06c13ede344452248   # Ubuntu AMI ID for ap-southeast-2
+      KeyName: !Ref KeyName
+      SecurityGroups:
+        - !Ref InstanceSecurityGroup
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 30
+            VolumeType: gp2
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: db972595-0de3-4af8-b3db-5f9efb97ff35
+
+  InstanceSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: Enable SSH access and HTTP traffic
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0   # You may want to restrict this to your IP range for better security
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0   # You may want to restrict this to your IP range for better security
+
+Outputs:
+  PublicIP:
+    Value: !GetAtt EC2Instance.PublicIp
+    Description: Public IP address of the EC2 instance
