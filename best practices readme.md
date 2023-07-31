@@ -3,6 +3,8 @@
 ## Unit tests
 
 Unit tests are in this file: [test_model.py](tests/test_model.py) and have been run successfully:
+
+
 ![testing](images/testing1.png)
 
 ## Makefile
@@ -16,7 +18,6 @@ Several makefiles used (depending on component to be set-up):
 - [Deployment makefile](deployment/makefile)
 
 - [Monitoring makefile](monitoring/makefile)
-  
 
 ## Other Best Practices
 
